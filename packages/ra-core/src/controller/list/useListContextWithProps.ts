@@ -71,6 +71,7 @@ export const useListContextWithProps = <RecordType extends RaRecord = any>(
 const extractListContextProps = <RecordType extends RaRecord = any>({
     sort,
     data,
+    meta,
     defaultTitle,
     displayedFilters,
     exporter,
@@ -97,6 +98,7 @@ const extractListContextProps = <RecordType extends RaRecord = any>({
 }: Partial<ListControllerResult<RecordType>> & Record<string, any>) => ({
     sort,
     data,
+    meta,
     defaultTitle,
     displayedFilters,
     exporter,
